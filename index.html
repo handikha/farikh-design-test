@@ -22,7 +22,7 @@
   </head>
   <body class="font-poppins">
     <section>
-      <nav>
+      <nav class="flex">
         <div
           class="absolute z-[9999] h-screen w-3/4 -translate-x-full bg-slate-800 p-4 text-slate-100 duration-300 ease-in-out lg:h-fit lg:w-full lg:translate-x-0 lg:bg-transparent"
           id="nav"
@@ -88,7 +88,7 @@
                   class="relative my-1 flex items-center justify-between rounded-lg bg-slate-600 p-4 hover:bg-slate-700 lg:mx-12 lg:inline lg:bg-transparent lg:hover:bg-slate-800 lg:hover:bg-opacity-70"
                   >More
                   <span
-                    class="material-symbols-rounded translate-y-[6px]"
+                    class="material-symbols-rounded lg:translate-y-[6px]"
                     id="expand"
                   >
                     expand_more
@@ -123,10 +123,14 @@
             <!-- END OF NAV MENU -->
           </div>
         </div>
+        <div
+          class="absolute right-0 h-screen w-full -translate-y-[400%] bg-gradient-to-b from-slate-900 to-transparent opacity-60 duration-200 lg:hidden"
+          id="right-nav"
+        ></div>
       </nav>
 
+      <!-- NAV BUTTON -->
       <div class="container relative">
-        <!-- NAV BUTTON -->
         <button
           class="absolute top-0 right-0 py-4 px-5 lg:hidden"
           id="nav-button"
